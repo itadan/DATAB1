@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с таблицами MySQL на Node.js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin: 20px auto;
+            width: 80%;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Работа с таблицами MySQL на Node.js</h1>
+    <form action="." method="post">
+        <label>Имя: </label>
+        <input type="text" name="col1" value="Имя" />
+        <label>Фамилия: </label>
+        <input type="text" name="col2" value="Фамилия" />
+        <label>Отчество: </label>
+        <input type="text" name="col3" value="Отчество" />
+        <label>Паспорт: </label>
+        <input type="text" name="col4" value="Паспорт" />
+        <label>ИНН: </label>
+        <input type="text" name="col5" value="ИНН" />
+        <label>СНИЛС: </label>
+        <input type="text" name="col6" value="СНИЛС" />
+        <label>Вод. права: </label>
+        <input type="text" name="col7" value="Вод. права" />
+        <label>Доп. документы: </label>
+        <input type="text" name="col8" value="Доп. документы" />
+        <label>Примечания: </label>
+        <input type="text" name="col9" value="Примечания" />
+        <input type="submit" value="Добавить" />
+    </form>
+    <br />
+    <table>
+        @tr
+    </table>
+    <p>Версия базы данных: 
+        <b>
+            @ver
+        </b>
+    </p>
+</body>
+</html>
